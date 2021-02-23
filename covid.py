@@ -34,7 +34,7 @@ plt.show()
 
 df['Japan'].plot()
 plt.title('Israel Daily Reporter New Cases')
-plt.plot (df['Israel'].rolling(window=21).mean(), label='MA 21 days')
+plt.plot (df['Japan'].rolling(window=21).mean(), label='MA 21 days')
 plt.legend()
 plt.show()
                           
