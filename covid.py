@@ -27,15 +27,25 @@ print(df_sa)
 print ('Total ',total)
 
 df['South Africa'].plot()
+
 plt.plot (df['South Africa'].rolling(window=21).mean(), label='MA 21 days')
+plt.plot (df['South Africa'].rolling(window=7).mean(), label='MA 7 days')
 plt.title('South Africa Daily Reporter New Cases')
 plt.legend()
 plt.show()
 
-df['Japan'].plot()
-plt.title('Israel Daily Reporter New Cases')
-plt.plot (df['Japan'].rolling(window=21).mean(), label='MA 21 days')
+##df['Sweden'].plot()
+plt.title('Sweden Daily Reporter New Cases')
+plt.plot (df['Sweden'].rolling(window=21).mean(), label='MA 21 days')
 plt.legend()
+plt.show()
+
+
+df_sa_7 = df['South Africa'].rolling(window=7).mean()
+df_sa_21 = df['South Africa'].rolling(window=21).mean()
+print("7 day ",df_sa_7)
+print(df_sa_21)
+df_sa_21.plot
 plt.show()
                           
                           
